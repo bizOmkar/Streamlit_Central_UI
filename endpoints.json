@@ -1,0 +1,133 @@
+{
+    "Get All Books": {
+        "url": "http://127.0.0.1:8000/books",
+        "method": "GET",
+        "fields": []
+    },
+    "Create a New Book": {
+        "url": "http://127.0.0.1:8000/create-book",
+        "method": "POST",
+        "fields": [
+            {
+                "name": "title",
+                "type": "text",
+                "placeholder": "Enter book title"
+            },
+            {
+                "name": "author",
+                "type": "text",
+                "placeholder": "Enter author name"
+            },
+            {
+                "name": "description",
+                "type": "text",
+                "placeholder": "Enter description"
+            },
+            {
+                "name": "rating",
+                "type": "number",
+                "placeholder": "Enter rating (1-5)"
+            }
+        ]
+    },
+    "Iris Prediction": {
+        "url": "http://127.0.0.1:7000/predict/",
+        "method": "POST",
+        "fields": [
+            {
+                "name": "sepal_length",
+                "type": "number",
+                "placeholder": "Enter sepal_length"
+            },
+            {
+                "name": "sepal_width",
+                "type": "number",
+                "placeholder": "Enter sepal_width"
+            },
+            {
+                "name": "petal_length",
+                "type": "number",
+                "placeholder": "Enter petal_length"
+            },
+            {
+                "name": "petal_width",
+                "type": "number",
+                "placeholder": "Enter petal_width"
+            }
+        ]
+    },
+    "Display the iris data": {
+        "url": "http://127.0.0.1:6000/dataframe/",
+        "method": "GET",
+        "fields": []
+    },
+    "download_file": {
+        "url": "http://127.0.0.1:5000/download/",
+        "method": "GET",
+        "fields": [
+            {
+                "name": "unique_code",
+                "type": "string",
+                "placeholder": "Enter field1"
+            }
+        ]
+    },
+    "upload_code": {
+        "url": "http://127.0.0.1:5000/upload/",
+        "method": "POST",
+        "fields": [
+            {
+                "name": "unique_code",
+                "type": "string",
+                "placeholder": "Enter code"
+            },
+            {
+                "name": "file",
+                "type": "file",
+                "placeholder": "Enter code"
+            }
+        ]
+    },
+    "file_code_upload": {
+        "url": "http://127.0.0.1:5000/upload_file/",
+        "method": "POST",
+        "fields": [
+            {
+                "name": "unique_code",
+                "type": "string",
+                "placeholder": "Enter unique_code"
+            },
+            {
+                "name": "file name",
+                "type": "string",
+                "placeholder": "Enter file name"
+            },
+            {
+                "name": "file",
+                "type": "file",
+                "placeholder": "Enter field1"
+            }
+        ]
+    },
+    "Weather": {
+        "url": "https://api.weatherapi.com/v1/current.json",
+        "method": "GET",
+        "fields": [
+            {
+                "name": "q",
+                "type": "string",
+                "placeholder": "Enter city name"
+            },
+            {
+                "name": "lang",
+                "type": "string",
+                "placeholder": "Enter language"
+            },
+            {
+                "name": "key",
+                "type": "string",
+                "placeholder": "Enter API key"
+            }
+        ]
+    }
+}
